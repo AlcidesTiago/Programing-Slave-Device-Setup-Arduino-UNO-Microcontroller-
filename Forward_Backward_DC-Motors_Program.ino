@@ -25,7 +25,7 @@ void Forward() {
   digitalWrite(8,HIGH);    //LowR                //Right side Motors
   analogWrite(10,255);    //EnableR
 }
-void Backward() {
+void Reverse() {
   digitalWrite(6,HIGH);   //HighL
   digitalWrite(7,LOW);    //LowL                //Left side Motors
   analogWrite(5,255);     //EnableL
@@ -34,6 +34,60 @@ void Backward() {
   digitalWrite(8,LOW);    //LowR                //Right side Motors
   analogWrite(10,255);    //EnableR
 }
+void Left1() {
+  digitalWrite(6,LOW);   //HighL
+  digitalWrite(7,HIGH);  //LowL                //Left side Motors
+  analogWrite(5,200);    //EnableL
+
+  digitalWrite(9,LOW);   //HighR
+  digitalWrite(8,HIGH);    //LowR                //Right side Motors
+  analogWrite(10,100);    //EnableR
+}
+  void Right1() {
+  digitalWrite(6,LOW);   //HighL
+  digitalWrite(7,HIGH);  //LowL                //Left side Motors
+  analogWrite(5,255);    //EnableL
+
+  digitalWrite(9,LOW);   //HighR
+  digitalWrite(8,HIGH);    //LowR                //Right side Motors
+  analogWrite(10,200);    //EnableR
+}
+void Left2() {
+  digitalWrite(6,LOW);   //HighL
+  digitalWrite(7,HIGH);  //LowL                //Left side Motors
+  analogWrite(5,160);    //EnableL
+
+  digitalWrite(9,LOW);   //HighR
+  digitalWrite(8,HIGH);    //LowR                //Right side Motors
+  analogWrite(10,100);    //EnableR
+}
+void Left3() {
+  digitalWrite(6,LOW);   //HighL
+  digitalWrite(7,HIGH);  //LowL                //Left side Motors
+  analogWrite(5,200);    //EnableL
+
+  digitalWrite(9,LOW);   //HighR
+  digitalWrite(8,HIGH);    //LowR                //Right side Motors
+  analogWrite(10,100);    //EnableR
+}
+void Right2() {
+  digitalWrite(6,LOW);   //HighL
+  digitalWrite(7,HIGH);  //LowL                //Left side Motors
+  analogWrite(5,255);    //EnableL
+
+  digitalWrite(9,LOW);   //HighR
+  digitalWrite(8,HIGH);    //LowR                //Right side Motors
+  analogWrite(10,160);    //EnableR
+}
+void Right3() {
+  digitalWrite(6,LOW);   //HighL
+  digitalWrite(7,HIGH);  //LowL                //Left side Motors
+  analogWrite(5,255);    //EnableL
+
+  digitalWrite(9,LOW);   //HighR
+  digitalWrite(8,HIGH);    //LowR                //Right side Motors
+  analogWrite(10,100);    //EnableR
+}
 void loop() {
-   Forward();
+   Right1();
  }
